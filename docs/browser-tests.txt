@@ -1,0 +1,24 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> agenda-clara@1.0.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m(node:78) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22mnpm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[2m[WebServer] [22m(node:91) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:109) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:109) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/booking.spec.ts:3:1 › books, persists through reload, cancels and releases slot (798ms)
+  ✓  2 tests/browser/booking.spec.ts:10:1 › duration blocks overlap, lunch and closing while allowing adjacent appointments (422ms)
+  ✓  3 tests/browser/booking.spec.ts:15:1 › focuses validation error and allows keyboard selection (560ms)
+  ✓  4 tests/browser/booking.spec.ts:20:1 › recovers corrupted local storage with visible warning (565ms)
+  ✓  5 tests/browser/booking.spec.ts:23:1 › changes date and keeps mobile page within viewport (405ms)
+
+  5 passed (5.0s)
